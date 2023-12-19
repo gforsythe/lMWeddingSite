@@ -1,7 +1,8 @@
 import heroShot from './imgs/heroshot.jpg';
-import './App.css';
+import FormForGuests from './components/Form';
 function App() {
   return (
+  
     <div className="div">
       <div className="div-2">
         <div className="div-3">FAQ</div>
@@ -15,14 +16,9 @@ function App() {
         <div className="div-10">contactS</div>
       </div>
       <div className="div-11">Are You Coming!?</div>
-      <form>
-      <label className="div-12">First Name</label>
-      <input></input>
-    
-      <label  className="div-14">Last Name</label >
-      <input></input>
-      </form>
-    
+
+        <FormForGuests/>
+  
     
       <div className="div-16">
         <div className="div-17">
