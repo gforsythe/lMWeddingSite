@@ -1,8 +1,24 @@
+body {
+  font-family: 'Bodoni Moda', serif;
+}
+
+
 .div {
   background-color: #fff;
   display: flex;
   flex-direction: column;
   padding: 50px 80px 50px 63px;
+}
+
+
+
+.transparent-photo-section {
+  background-image: url('./imgs/LMH1.jpg');
+  background-size: 40rem  auto;
+  background-position: center; /* Adjust the position to bottom center */
+  background-repeat: no-repeat;
+  height: 300px; /* Set the desired height for your top section */
+  opacity: 0.7; /* Set the desired level of transparency (0.0 to 1.0) */
 }
 @media (max-width: 991px) {
   .div {
@@ -104,9 +120,8 @@
   color: #828282;
   text-align: center;
   align-self: center;
-  margin-top: 115px;
-  font: italic 400 40px Playfair Display, -apple-system, Roboto, Helvetica,
-    sans-serif;
+  margin-top: 2rem;
+  font: italic 400 32px 'Bondoni Moda', sans-serif !important;
 }
 @media (max-width: 991px) {
   .div-11 {
@@ -166,7 +181,7 @@
 .div-16 {
   background-color: #f5f5f5;
   align-self: center;
-  margin-top: 176px;
+  margin-top: 10vh;
   width: 100%;
   max-width: 970px;
   padding: 49px;

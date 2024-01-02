@@ -1,25 +1,61 @@
 import heroShot from './imgs/heroshot.jpg';
+import slideImg01 from './imgs/slide01.jpg';
+import slideImg02 from './imgs/slideimg04.jpg';
+import slideImg03 from './imgs/LMH1.jpg';
+import slideImg04 from "./imgs/slide02.jpg";
+import slideImg05 from "./imgs/slid05.jpg"
 import FormForGuests from './components/Form';
+import { Container, Row, Col, Nav, Navbar, Carousel } from 'react-bootstrap';
 function App() {
   return (
-  
+
     <div className="div">
       <div className="div-2">
-        <div className="div-3">FAQ</div>
-        <h1>Liyana & Mike Get Married</h1>
+        <div className="div-3"><a style={{textDecoration:'none', color:"black"}} href='#faq'>FAQ</a></div>
       </div>
-      <div className="div-5">
-        <div className="div-6">Home</div>
-        <div className="div-7">travel</div>
-        <div className="div-8">life style</div>
-        <div className="div-9">About</div>
-        <div className="div-10">contactS</div>
-      </div>
-      <div className="div-11">Are You Coming!?</div>
+      <Container fluid className="app-container">
+        <Row className="header-row">
+          <Col>
+            <h1 className="text-center">Liyana & Mike Get Married</h1>
+          </Col>
 
-        <FormForGuests/>
-  
-    
+      <Navbar className="justify-content-center" expand="md">
+
+<Nav className="ml-auto">
+  <Nav.Link href="#home" className="nav-link">Home</Nav.Link>
+  <Nav.Link href="#travel" className="nav-link">Travel</Nav.Link>
+  <Nav.Link href="#lifestyle" className="nav-link">Lifestyle</Nav.Link>
+  <Nav.Link href="#about" className="nav-link">About</Nav.Link>
+  <Nav.Link href="#contact" className="nav-link">Contact</Nav.Link>
+</Nav>
+
+</Navbar>
+        </Row>
+
+      </Container>
+      <Carousel fade className="mt-4"  interval={2500}>
+        <Carousel.Item>
+          <img className="d-block w-100" src={slideImg01} alt="First slide" style={{ height: '400px', objectFit: 'contain' }} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={slideImg02} alt="Second slide" style={{ height: '400px', objectFit: 'contain' }} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={slideImg03} alt="Third slide" style={{ height: '400px', objectFit: 'scale-down'}} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={slideImg04} alt="Fourth slide" style={{ height: '400px', objectFit: 'scale-down'}} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={slideImg05} alt="Fourth slide" style={{ height: '400px', objectFit: 'scale-down'}} />
+        </Carousel.Item>
+
+      </Carousel>
+
+      <h2 className="text-center" style={{paddingTop:"2rem", fontSize:"2.5rem"}}>Are You Coming!?</h2>
+      <FormForGuests />
+
+
       <div className="div-16">
         <div className="div-17">
           <div className="column">
@@ -298,6 +334,8 @@ function App() {
           </div>
         </div>
       </div>
+      <div className='bg-balls' />
+
       <div className="div-83">
         <div className="div-84">2017 Copyright information goes here.</div>
         <div className="div-85">
