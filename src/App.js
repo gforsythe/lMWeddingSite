@@ -1,3 +1,5 @@
+import { Container, Row, Col, Nav, Navbar, Carousel, Card, Button } from 'react-bootstrap';
+import venueImg from './imgs/venueImg.jpeg'
 import heroShot from './imgs/heroshot.jpg';
 import slideImg01 from './imgs/slide01.jpg';
 import slideImg02 from './imgs/slideimg04.jpg';
@@ -5,7 +7,9 @@ import slideImg03 from './imgs/LMH1.jpg';
 import slideImg04 from "./imgs/slide02.jpg";
 import slideImg05 from "./imgs/slid05.jpg"
 import FormForGuests from './components/Form';
-import { Container, Row, Col, Nav, Navbar, Carousel } from 'react-bootstrap';
+import SectionCard from './components/SectionCard';
+import Question from './components/Question';
+
 function App() {
   return (
 
@@ -33,21 +37,21 @@ function App() {
         </Row>
 
       </Container>
-      <Carousel fade className="mt-4"  interval={2500}>
+      <Carousel fade className="mt-4"  interval={2500} controls={false} >
         <Carousel.Item>
-          <img className="d-block w-100" src={slideImg01} alt="First slide" style={{ height: '400px', objectFit: 'contain' }} />
+          <img className="d-block w-100" src={slideImg01} alt="First slide" style={{ height: '400px', objectFit: 'contain', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}} />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={slideImg02} alt="Second slide" style={{ height: '400px', objectFit: 'contain' }} />
+          <img className="d-block w-100" src={slideImg02} alt="Second slide" style={{ height: '400px', objectFit: 'contain', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={slideImg03} alt="Third slide" style={{ height: '400px', objectFit: 'scale-down'}} />
+          <img className="d-block w-100" src={slideImg03} alt="Third slide" style={{ height: '400px', objectFit: 'scale-down', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}} />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={slideImg04} alt="Fourth slide" style={{ height: '400px', objectFit: 'scale-down'}} />
+          <img className="d-block w-100" src={slideImg04} alt="Fourth slide" style={{ height: '400px', objectFit: 'scale-down', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}} />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={slideImg05} alt="Fourth slide" style={{ height: '400px', objectFit: 'scale-down'}} />
+          <img className="d-block w-100" src={slideImg05} alt="Fourth slide" style={{ height: '400px', objectFit: 'scale-down', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}} />
         </Carousel.Item>
 
       </Carousel>
@@ -82,50 +86,20 @@ function App() {
           </div>
         </div>
       </div>
+     
       <div className="div-23">
         <div className="div-24">
-          <div className="column-3">
-            <div className="div-25">
-              <div className="div-26">
-                <div className="div-27"></div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/05336f7019f651a02565d369da63a44b376b59afbf6e59af4ce28b0bf06de041?"
-                  className="img-2"
-                />
-                <div className="div-28">
-                  This is a testimonial related to travel, and some
-                  <br />
-                  dummy text to make it long.
-                </div>
-              </div>
-              <div className="div-29">
-                <div className="div-30">Spot 01</div>
-                <div className="div-31">Read more</div>
-              </div>
-            </div>
-          </div>
-          <div className="column-4">
-            <div className="div-32">
-              <div className="div-33">
-                <div className="div-34"></div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/05336f7019f651a02565d369da63a44b376b59afbf6e59af4ce28b0bf06de041?"
-                  className="img-3"
-                />
-                <div className="div-35">
-                  This is a testimonial related to travel, and some
-                  <br />
-                  dummy text to make it long.
-                </div>
-              </div>
-              <div className="div-36">
-                <div className="div-37">Spot 01</div>
-                <div className="div-38">Read more</div>
-              </div>
-            </div>
-          </div>
+        <Col xs={12} md={6} className="mx-auto">
+        <Card  style={{ background:"#e0e0e0" }}>
+    <Card.Img variant='top' src={venueImg} alt="Venue"/>
+    <Card.Body>
+      <Card.Title>Jardin Event Venue</Card.Title>
+      <Card.Text>Sept 15th, 2024 @ lunch time</Card.Text>
+      <Card.Text>Kampung Cheringin, Kampung Janda Baik, 28750 Bentong, Pahang, Malaysia</Card.Text>
+      <Button variant='secondary' href='https://www.instagram.com/jardineventvenue/'>More Info</Button>
+    </Card.Body>
+  </Card>          
+</Col>
         </div>
       </div>
       <div className="div-39">
@@ -334,10 +308,14 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='bg-balls' />
-
+      <div style={{paddingTop: "2rem"}} id='faq'>
+      <Col>
+            <h1 className="text-center">FAQs</h1>
+          </Col>
+      <Question />
+      </div>
       <div className="div-83">
-        <div className="div-84">2017 Copyright information goes here.</div>
+        <div className="div-84">2024 Copyright of GTF Media.</div>
         <div className="div-85">
           <div className="div-86"></div>
           <div className="div-87"></div>

@@ -1,25 +1,25 @@
 body {
   font-family: 'Bodoni Moda', serif;
 }
-
-
 .div {
-  background-color: #fff;
+ 
+  background: linear-gradient(to right, #f0f0f0, #FFD9C4);
+  background: repeating-linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff 50px,
+    #FFD9C4 50px,
+    #FFD9C4 200px
+  );
   display: flex;
   flex-direction: column;
   padding: 50px 80px 50px 63px;
+  
+
+  
 }
 
 
-
-.transparent-photo-section {
-  background-image: url('./imgs/LMH1.jpg');
-  background-size: 40rem  auto;
-  background-position: center; /* Adjust the position to bottom center */
-  background-repeat: no-repeat;
-  height: 300px; /* Set the desired height for your top section */
-  opacity: 0.7; /* Set the desired level of transparency (0.0 to 1.0) */
-}
 @media (max-width: 991px) {
   .div {
     padding: 0 20px;
