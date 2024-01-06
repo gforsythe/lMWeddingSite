@@ -1,124 +1,62 @@
-import { Container, Row, Col, Nav, Navbar, Carousel, Card, Button } from 'react-bootstrap';
-import venueImg from './imgs/venueImg.jpeg'
-import heroShot from './imgs/heroshot.jpg';
-import slideImg01 from './imgs/slide01.jpg';
-import slideImg02 from './imgs/slideimg04.jpg';
-import slideImg03 from './imgs/LMH1.jpg';
-import slideImg04 from "./imgs/slide02.jpg";
-import slideImg05 from "./imgs/slid05.jpg"
+import { Container, Row, Col, Carousel, Card, Button } from 'react-bootstrap';
+import venueImg from './imgs/venueImg.jpeg';
 import FormForGuests from './components/Form';
 import SectionCard from './components/SectionCard';
+import NavBar from './components/NavBar';
 import Question from './components/Question';
+import AboutUs from './components/AboutUs';
+import ImageSlider from './components/ImageSlider';
 
 function App() {
+
+
   return (
 
     <div className="div">
+      <div id='home' />
       <div className="div-2">
-        <div className="div-3"><a style={{textDecoration:'none', color:"black"}} href='#faq'>FAQ</a></div>
       </div>
       <Container fluid className="app-container">
         <Row className="header-row">
           <Col>
             <h1 className="text-center">Liyana & Mike Get Married</h1>
           </Col>
-
-      <Navbar className="justify-content-center" expand="md">
-
-<Nav className="ml-auto">
-  <Nav.Link href="#home" className="nav-link">Home</Nav.Link>
-  <Nav.Link href="#travel" className="nav-link">Travel</Nav.Link>
-  <Nav.Link href="#lifestyle" className="nav-link">Lifestyle</Nav.Link>
-  <Nav.Link href="#about" className="nav-link">About</Nav.Link>
-  <Nav.Link href="#contact" className="nav-link">Contact</Nav.Link>
-</Nav>
-
-</Navbar>
+          <NavBar />
         </Row>
 
       </Container>
-      <Carousel fade className="mt-4"  interval={2500} controls={false} >
-        <Carousel.Item>
-          <img className="d-block w-100" src={slideImg01} alt="First slide" style={{ height: '400px', objectFit: 'contain', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}} />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={slideImg02} alt="Second slide" style={{ height: '400px', objectFit: 'contain', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={slideImg03} alt="Third slide" style={{ height: '400px', objectFit: 'scale-down', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}} />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={slideImg04} alt="Fourth slide" style={{ height: '400px', objectFit: 'scale-down', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}} />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={slideImg05} alt="Fourth slide" style={{ height: '400px', objectFit: 'scale-down', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}} />
-        </Carousel.Item>
+      <ImageSlider />
 
-      </Carousel>
-
-      <h2 className="text-center" style={{paddingTop:"2rem", fontSize:"2.5rem"}}>Are You Coming!?</h2>
+      <h2 className="text-center" style={{ paddingTop: "2rem", fontSize: "2.5rem" }}>Are You Coming!?</h2>
       <FormForGuests />
 
+      <AboutUs />
 
-      <div className="div-16">
-        <div className="div-17">
-          <div className="column">
-            <div className="div-18">
-              Hi everyone! We’re so excited to share this special day with you. Here
-              you’ll find info about the wedding, how to get there, how to prepare,
-              FAQs, etc. Please take your time to read through everything so you’re
-              ready for our full day of celebrations! But first…
-            </div>
-          </div>
-          <div className="column-2">
-            <div className="div-19">
-              <div className="div-20">
-                <img
-                  loading="lazy"
-                  srcSet={heroShot}
-                  className="img img-circle" // Add a class for styling
-                  alt="Hero Shot"
-                />
-                Liyana & Mike
-              </div>
-              <div className="div-22">A Cute bio about Liyana and Mike</div>
-            </div>
-          </div>
-        </div>
-      </div>
-     
       <div className="div-23">
         <div className="div-24">
-        <Col xs={12} md={6} className="mx-auto">
-        <Card  style={{ background:"#e0e0e0" }}>
-    <Card.Img variant='top' src={venueImg} alt="Venue"/>
-    <Card.Body>
-      <Card.Title>Jardin Event Venue</Card.Title>
-      <Card.Text>Sept 15th, 2024 @ lunch time</Card.Text>
-      <Card.Text>Kampung Cheringin, Kampung Janda Baik, 28750 Bentong, Pahang, Malaysia</Card.Text>
-      <Button variant='secondary' href='https://www.instagram.com/jardineventvenue/'>More Info</Button>
-    </Card.Body>
-  </Card>          
-</Col>
+          <Col xs={12} md={6} className="mx-auto">
+            <Card style={{ background: "#e0e0e0" }}>
+              <Card.Img variant='top' src={venueImg} alt="Venue" />
+              <Card.Body>
+                <Card.Title>Jardin Event Venue</Card.Title>
+                <Card.Text>Sept 15th, 2024 @ lunch time</Card.Text>
+                <Card.Text>Kampung Cheringin, Kampung Janda Baik, 28750 Bentong, Pahang, Malaysia</Card.Text>
+                <Button variant='secondary' href='https://www.instagram.com/jardineventvenue/'>More Info</Button>
+              </Card.Body>
+            </Card>
+          </Col>
         </div>
       </div>
+      <div style={{ paddingTop: "2rem" }} id='travel'>
+        <Col>
+          <h1 className="text-center">Travel</h1>
+        </Col>
+        </div>
       <div className="div-39">
         <div className="div-40">
           <div className="column-5">
             <div className="div-41">
-              <div className="div-42">
-                <div className="div-43"></div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/05336f7019f651a02565d369da63a44b376b59afbf6e59af4ce28b0bf06de041?"
-                  className="img-4"
-                />
-                <div className="div-44">
-                  This is a testimonial related to travel, and some
-                  <br />
-                  dummy text to make it long.
-                </div>
-              </div>
+              
               <div className="div-45">
                 <div className="div-46">Spot 01</div>
                 <div className="div-47">Read more</div>
@@ -127,19 +65,7 @@ function App() {
           </div>
           <div className="column-6">
             <div className="div-48">
-              <div className="div-49">
-                <div className="div-50"></div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/05336f7019f651a02565d369da63a44b376b59afbf6e59af4ce28b0bf06de041?"
-                  className="img-5"
-                />
-                <div className="div-51">
-                  This is a testimonial related to travel, and some
-                  <br />
-                  dummy text to make it long.
-                </div>
-              </div>
+              
               <div className="div-52">
                 <div className="div-53">Spot 01</div>
                 <div className="div-54">Read more</div>
@@ -148,6 +74,11 @@ function App() {
           </div>
         </div>
       </div>
+      <div style={{ paddingTop: "2rem" }} id='lifestyle'>
+        <Col>
+          <h1 className="text-center">Lifestyle</h1>
+        </Col>
+        </div>
       <div className="div-55">
         <div className="div-56">
           <div className="column-7">
@@ -167,23 +98,7 @@ function App() {
                 bar sweet dessert...
               </div>
               <div className="div-60">Read more</div>
-              <div className="div-61">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-7"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-8"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-9"
-                />
-              </div>
+             
             </div>
           </div>
         </div>
@@ -207,23 +122,7 @@ function App() {
                 bar sweet dessert...
               </div>
               <div className="div-67">Read more</div>
-              <div className="div-68">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-11"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-12"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-13"
-                />
-              </div>
+              
             </div>
           </div>
         </div>
@@ -247,23 +146,7 @@ function App() {
                 bar sweet dessert...
               </div>
               <div className="div-74">Read more</div>
-              <div className="div-75">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-15"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-16"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-17"
-                />
-              </div>
+             
             </div>
           </div>
         </div>
@@ -287,32 +170,22 @@ function App() {
                 bar sweet dessert...
               </div>
               <div className="div-81">Read more</div>
-              <div className="div-82">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-19"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-20"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c453c831610216cfea6422f1a00d1dca191d8057a840147298b244e86aa0655?"
-                  className="img-21"
-                />
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
-      <div style={{paddingTop: "2rem"}} id='faq'>
-      <Col>
-            <h1 className="text-center">FAQs</h1>
-          </Col>
-      <Question />
+      <div style={{ paddingTop: "2rem" }} id='faq'>
+        <Col>
+          <h1 className="text-center">FAQs</h1>
+        </Col>
+        <Question />
+      </div>
+      <div  style={{ paddingTop: "2rem" }} id='contact'>
+        <Col>
+          <h1 className="text-center">Contact</h1>
+        </Col>
+        <p style={{paddingTop:"1rem"}}className="text-center">INSERT Wedding Planner Contact INFO HERE:</p>
       </div>
       <div className="div-83">
         <div className="div-84">2024 Copyright of GTF Media.</div>
