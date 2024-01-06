@@ -19,7 +19,7 @@ function App() {
       <Container fluid className="app-container">
         <Row className="header-row">
           <Col>
-            <h1 className="text-center">Liyana & Mike Get Married</h1>
+            <h1 style={{margin:"2opx auto"}} className="text-center">Liyana & Mike Get Married</h1>
           </Col>
           <NavBar />
         </Row>

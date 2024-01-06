@@ -129,10 +129,27 @@ function FormForGuests() {
           </Form>
         </Card>
       </Container>
-      <Modal isOpen={isModalOpen} onRequestClose={closeModal}>
+      <Modal isOpen={isModalOpen} onRequestClose={closeModal} style={{
+          overlay: {
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            zIndex: 1500,
+          },
+          content: {
+            width: '80%',
+            maxWidth: '300px', // Set the maximum width of the modal
+            margin: 'auto',
+            padding: '20px',
+            borderRadius: '8px',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+            backgroundColor: '#fff',
+            textAlign: 'center',
+            overflow: 'auto', // Allow scrolling if content exceeds the modal height
+            maxHeight: '50vh', // Set the maximum height of the modal
+          },
+        }}>
         <div>
-          <h2>Your info has been added. Thank you! We will see you at the wedding</h2>
-          <button onClick={closeModal}>Close</button>
+          <h2>Your info has been added. Thank you!<br/><br/> We will see you at the wedding</h2>
+          <button style={{margin:"1rem"}} onClick={closeModal}>Close</button>
         </div>
       </Modal>
 

@@ -8,22 +8,18 @@ function Question() {
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>When and where is the wedding? </Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Body >
               Sept 15th, 2024 @ lunch time
               <br />
               <br />
-
               Jardin Event Venue: Kampung Cheringin, Kampung Janda Baik, 28750 Bentong, Pahang, Malaysia
               <br />
               <br />
-
               Venue IG:<a href='https://www.instagram.com/jardineventvenue/'> click here </a>
-
-
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>What do we wear? </Accordion.Header>
+            <Accordion.Header >What do we wear? </Accordion.Header>
             <Accordion.Body>
               Bright floral colors, please! Check Wedding Day page for samples
             </Accordion.Body>
