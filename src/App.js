@@ -29,6 +29,7 @@ function App() {
 
       <h2 className="text-center" style={{ paddingTop: "2rem", fontSize: "2.5rem" }}>Are You Coming!?</h2>
       <FormForGuests />
+      <div id='about' />
 
       <AboutUs />
 
@@ -47,9 +48,9 @@ function App() {
           </Col>
         </div>
       </div>
-      <div style={{ paddingTop: "2rem" }} id='travel'>
+      <div style={{ paddingTop: "2rem" }} id='gettingThere'>
         <Col>
-          <h1 className="text-center">Travel</h1>
+          <h1 className="text-center">Getting There</h1>
         </Col>
         </div>
       <div className="div-39">
@@ -74,9 +75,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div style={{ paddingTop: "2rem" }} id='lifestyle'>
+      <div style={{ paddingTop: "2rem" }} id='wedding'>
         <Col>
-          <h1 className="text-center">Lifestyle</h1>
+          <h1 className="text-center">Wedding</h1>
         </Col>
         </div>
       <div className="div-55">
@@ -175,6 +176,18 @@ function App() {
           </div>
         </div>
       </div>
+      <div style={{ paddingTop: "2rem" }} id='preparing'>
+        <Col>
+          <h1 className="text-center">Preparing for Malaysia </h1>
+        </Col>
+        </div>
+     
+        <SectionCard/>
+        <SectionCard/>
+      
+      
+    
+        
       <div style={{ paddingTop: "2rem" }} id='faq'>
         <Col>
           <h1 className="text-center">FAQs</h1>

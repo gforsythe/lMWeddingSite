@@ -31,7 +31,7 @@ function CustomNavbar() {
     >
       <Nav className="ml-auto" >
         <Nav.Link href="#home"  className="nav-link custom-nav-link">Home</Nav.Link>
-        <Nav.Link href="#travel"  className="nav-link custom-nav-link">Getting There</Nav.Link>
+        <Nav.Link href="#gettingThere"  className="nav-link custom-nav-link">Getting There</Nav.Link>
         <Nav.Link href="#wedding"  className="nav-link custom-nav-link">Wedding</Nav.Link>
         <Nav.Link href="#preparing"  className="nav-link custom-nav-link">Preparing </Nav.Link>
         <Nav.Link href="#about"  className="nav-link custom-nav-link">About</Nav.Link>
