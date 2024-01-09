@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/lMWeddingSite/static/css/main.f2a56820.css",
+    "main.js": "/lMWeddingSite/static/js/main.d49f7c15.js",
+    "static/js/787.ba44f1db.chunk.js": "/lMWeddingSite/static/js/787.ba44f1db.chunk.js",
+    "static/media/slide01.jpg": "/lMWeddingSite/static/media/slide01.6509354f77ba46e1d030.jpg",
+    "static/media/fashion06.png": "/lMWeddingSite/static/media/fashion06.e0c86e6d6c9258ed37e6.png",
+    "static/media/fashion04.png": "/lMWeddingSite/static/media/fashion04.3f66702f9f3e4a79cd64.png",
+    "static/media/fashion08.png": "/lMWeddingSite/static/media/fashion08.dd0acb7a81ff0121dac7.png",
+    "static/media/fashion02.png": "/lMWeddingSite/static/media/fashion02.cf3bedadb5d3cfe69465.png",
+    "static/media/fashion01.png": "/lMWeddingSite/static/media/fashion01.ba12667daefa6da8dde5.png",
+    "static/media/fashion05.png": "/lMWeddingSite/static/media/fashion05.151b04a003c30754555c.png",
+    "static/media/fashion03.png": "/lMWeddingSite/static/media/fashion03.dc781ba2b540197caca0.png",
+    "static/media/fashion09.png": "/lMWeddingSite/static/media/fashion09.82a2fbbd73c709f33c43.png",
+    "static/media/heroshot.jpg": "/lMWeddingSite/static/media/heroshot.7e1bbac693471def9b1c.jpg",
+    "static/media/venueImg.jpeg": "/lMWeddingSite/static/media/venueImg.1230c339578bf30e57e5.jpeg",
+    "static/media/fashion07.png": "/lMWeddingSite/static/media/fashion07.6e34a73aac9b5a871f40.png",
+    "static/media/slide02.jpg": "/lMWeddingSite/static/media/slide02.6578acfd86de99ec9445.jpg",
+    "static/media/slid05.jpg": "/lMWeddingSite/static/media/slid05.c8c70d91a1d32b3bc123.jpg",
+    "static/media/slideimg04.jpg": "/lMWeddingSite/static/media/slideimg04.4255697f331d14472036.jpg",
+    "static/media/LMH1.jpg": "/lMWeddingSite/static/media/LMH1.1b40aeda5fbd8c17e2db.jpg",
+    "static/media/shuttleBus.jpeg": "/lMWeddingSite/static/media/shuttleBus.0daebac5d21c6b128b0c.jpeg",
+    "index.html": "/lMWeddingSite/index.html",
+    "main.f2a56820.css.map": "/lMWeddingSite/static/css/main.f2a56820.css.map",
+    "main.d49f7c15.js.map": "/lMWeddingSite/static/js/main.d49f7c15.js.map",
+    "787.ba44f1db.chunk.js.map": "/lMWeddingSite/static/js/787.ba44f1db.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2a56820.css",
+    "static/js/main.d49f7c15.js"
+  ]
+}
