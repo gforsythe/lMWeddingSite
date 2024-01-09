@@ -26,12 +26,11 @@ function AboutUs() {
           <Col md={6}  className="d-flex align-items-center justify-content-center">
             <Card style={{ background: '#fff', border: 'none', padding: '2rem' }}>
               <Card.Body>
-                <div style={{
-                  width: '300px', // Adjust the width of the circle container
-                  height: '300px', // Adjust the height of the circle container
-                  borderRadius: '50%', // Adjust the border-radius for a perfect circle
-                  overflow: 'hidden',
-                }}>
+                <div  style={{
+                    width: '100%', // Ensure the width is 100% of the parent container
+                    borderRadius: '50%',
+                    overflow: 'hidden',
+                  }}>
                   <img
                     loading="lazy"
                     srcSet={heroShot}

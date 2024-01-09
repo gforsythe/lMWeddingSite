@@ -8,7 +8,7 @@ function CustomNavbar() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition > 50) {
-        setNavbarBackground('#FFFFFF '); // Change to your desired background color
+        setNavbarBackground('#b0aeae'); // Change to your desired background color
       } else {
         setNavbarBackground('transparent');
       }
@@ -23,12 +23,16 @@ function CustomNavbar() {
 
   return (
     <Navbar
-      className="justify-content-center"
+      className="justify-content-center mx-auto"
       expand="md"
       style={{ backgroundColor: navbarBackground, transition: 'background-color 0.3s' }}
       fixed="top"
       
     >
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
+
+
       <Nav className="ml-auto" >
         <Nav.Link href="#home"  className="nav-link custom-nav-link">Home</Nav.Link>
         <Nav.Link href="#gettingThere"  className="nav-link custom-nav-link">Getting There</Nav.Link>
@@ -39,6 +43,8 @@ function CustomNavbar() {
         <Nav.Link href="#faq"  className="nav-link custom-nav-link">FAQs</Nav.Link>
 
       </Nav>
+      </Navbar.Collapse>
+
     </Navbar>
   );
 }
