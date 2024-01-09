@@ -107,7 +107,7 @@ function App() {
           <SectionCard imageSrc={car} title={"Drive yourself"} />
         </Col>
         <Col>
-          <SectionCard imageSrc={shuttleBus} title={"Shuttle Bus"} />
+          <SectionCard imageSrc={shuttleBus} title={"Shuttle Bus"} description={"Closer to Sept 2024, videos and pictures will be posted on specific pick up point and how to get there via parking lot, Grab, or train "} />
         </Col>
       </Row>
       <div style={{ paddingTop: "2rem" }}>

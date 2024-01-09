@@ -23,17 +23,23 @@ function AboutUs() {
             </Card>
           </Col>
 
-          <Col md={6}>
-            <Card style={{ background: '#fff' }}>
+          <Col md={6}  className="d-flex align-items-center justify-content-center">
+            <Card style={{ background: '#fff', border: 'none', padding: '2rem' }}>
               <Card.Body>
-                <div className="div-20">
+                <div style={{
+                  width: '300px', // Adjust the width of the circle container
+                  height: '300px', // Adjust the height of the circle container
+                  borderRadius: '50%', // Adjust the border-radius for a perfect circle
+                  overflow: 'hidden',
+                }}>
                   <img
                     loading="lazy"
                     srcSet={heroShot}
-                    className="img img-circle" // Add a class for styling
+                    className="img-fluid" // Add a class for styling
                     alt="Hero Shot"
-                    style={{ width: '200px', height: '200px', objectFit: 'cover', borderRadius: '50%' }}
-                  />
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    />
+                
                 </div>
               </Card.Body>
             </Card>
