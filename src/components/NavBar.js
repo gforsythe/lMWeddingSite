@@ -8,7 +8,7 @@ function CustomNavbar() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition > 50) {
-        setNavbarBackground('#e0e0e0'); // Change to your desired background color
+        setNavbarBackground('#FFFFFF '); // Change to your desired background color
       } else {
         setNavbarBackground('transparent');
       }

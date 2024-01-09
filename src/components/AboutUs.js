@@ -5,10 +5,10 @@ import { Container, Card, Row, Col } from 'react-bootstrap'
 function AboutUs() {
   return (
     <Container fluid style={{ paddingTop: '2rem', maxWidth: '800px' }}>
-        <Card style={{ background: '#e0e0e0' }}>
+        <Card style={{ background: '#eadaf7' }}>
         <Row>
           <Col md={6} className="d-flex align-items-center justify-content-center">
-            <Card style={{ background: '#e0e0e0', border:'none' }}>
+            <Card style={{ background: '#eadaf7', border:'none' }}>
             <Card.Body className="text-center">
                 <Card.Title>Hi Everyone!</Card.Title>
                 <Card.Text style={{paddingTop:"1rem", fontSize:"1.3rem"}}>
