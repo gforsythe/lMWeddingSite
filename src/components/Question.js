@@ -1,14 +1,14 @@
 import React from 'react';
-import { Accordion, Card, Button } from 'react-bootstrap';
+import { Accordion, Card,} from 'react-bootstrap';
 
 function Question() {
   return (
-    <Card >
+    <Card  style={{padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}}>
       <Card.Header>
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>When and where is the wedding? </Accordion.Header>
-            <Accordion.Body >
+            <Accordion.Header style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'blue' }}>When and where is the wedding? </Accordion.Header>
+            <Accordion.Body style={{color:"red", fontSize:"1.2rem"}} >
               Sept 15th, 2024 @ lunch time
               <br />
               <br />
@@ -20,7 +20,7 @@ function Question() {
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header >What do we wear? </Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Body >
               Bright floral colors, please! Check Wedding Day page for samples
             </Accordion.Body>
           </Accordion.Item>

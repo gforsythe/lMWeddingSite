@@ -5,7 +5,7 @@ import { db } from '../misc/firebase';
 import Modal from 'react-modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { Card, Container, Row, Col } from 'react-bootstrap';
+import { Card, Container, } from 'react-bootstrap';
 function FormForGuests() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -116,8 +116,10 @@ function FormForGuests() {
 
               <Form.Select required aria-label="Default select example" value={formData.transitMethod} onChange={(e) => setFormData({ ...formData, transitMethod: e.target.value })} isInvalid={validated && !formData.transitMethod}>
                 <option value="default">select a method of transit</option>
-                <option value="Bus">Bus</option>
-                <option value="Train">Train</option>
+                <option value="Bus">Bus With The Wedding Party</option>
+                <option value="getting-there-myself">Getting There Myself</option>
+                <option value="n/a">N/A</option>
+
               </Form.Select>
               <Form.Control.Feedback type="invalid">
                 Please select your transit method.
