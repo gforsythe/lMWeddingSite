@@ -36,7 +36,7 @@ function App() {
       </Container>
       <ImageSlider />
 
-      <h2 className="text-center" style={{ paddingTop: "2rem", fontSize: "2.5rem" }}>Are You Coming!?</h2>
+      <h2 className="text-center" style={{ paddingTop: "2rem", fontSize: "2.5rem" }}>Are You Coming!?!</h2>
       <FormForGuests />
       <div id='about' />
 
