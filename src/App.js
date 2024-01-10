@@ -21,15 +21,16 @@ function App() {
   return (
 
     <div className="div">
+                <NavBar />
+
       <div id='home' />
       <div className="div-2">
       </div>
       <Container fluid className="app-container">
         <Row className="header-row">
           <Col>
-            <h1 style={{ margin: "2opx auto" }} className="text-center">Liyana & Mike Get Married</h1>
+            <h1 style={{ paddingTop:"3rem", margin: "2opx auto" }} className="text-center">Liyana & Mike Get Married</h1>
           </Col>
-          <NavBar />
         </Row>
 
       </Container>
