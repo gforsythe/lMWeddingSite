@@ -3,6 +3,8 @@ import venueImg from './imgs/venueImg.jpeg';
 import car from "./imgs/car.jpeg";
 import gift from "./imgs/gift.jpeg";
 import shuttleBus from "./imgs/shuttleBus.jpeg";
+import prepLink01 from './imgs/prepLink01.png'
+import prepLink02 from './imgs/prepLink02.jpeg'
 import canFlag from './imgs/flag.png';
 import aussieFlag from "./imgs/aussieFlag.png";
 import FormForGuests from './components/Form';
@@ -115,7 +117,7 @@ function App() {
       </Row>
       <div style={{ paddingTop: "2.2rem" }}>
         <Col>
-          <h2 className="text-center">Hotels in the area</h2>
+          <h2 className="text-center">Hotels In The Area</h2>
         </Col>
       </div>
       <MapComponent />
@@ -153,11 +155,11 @@ function App() {
       </div>
       <Row>
         <Col>
-          <SectionCard />
+          <SectionCard imageSrc={prepLink01} title={"15 things to know before going to Malaysia"} description={"From what to pack to social etiquette, here is everything you need to know before visiting Malaysia."} link={"https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-malaysia"} />
 
         </Col>
         <Col>
-          <SectionCard />
+          <SectionCard imageSrc={prepLink02} title={"Gay In: Malaysia - Guide to Gay & Lesbian Malaysia"} description={"A guide to LGBT travel in Malaysia. Is Malaysia a gay friendly travel destination? LGBT Rights in Malaysia. Know the facts before you travel."} link={"https://www.ourtasteforlife.com/lgbt-travel-malaysia/"}/>
 
         </Col>
       </Row>
@@ -175,10 +177,10 @@ function App() {
         <Col>
           <h1 className="text-center">Contact</h1>
         </Col>
-        <p style={{ paddingTop: "1rem" }} className="text-center">INSERT Wedding Planner Contact INFO HERE:</p>
+        <p style={{ paddingTop: "1rem" }} className="text-center">TBA</p>
       </div>
    
-        <footer>2024 Copyright of GTF Media.</footer>
+        <footer style={{fontSize:".8rem"}}>2024 Copyright of GTF Media.</footer>
  
     </div>
   );

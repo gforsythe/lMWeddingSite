@@ -1,8 +1,7 @@
 body {
-  font-family: 'Bodoni Moda', serif;
-
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Crimson Text', serif;
 }
-
 h1, h2, h3{
   text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.3); /* Add your preferred text shadow values */
 
