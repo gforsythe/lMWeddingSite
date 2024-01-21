@@ -82,7 +82,7 @@ function App() {
     height: '50%'}} />
             <Card.Body>
               <Card.Title>Travel From Canada</Card.Title>
-              <Card.Text style={{fontSize:"1.2rem"}}>Vancouver/Toronto to Hong Kong/Japan/Taiwan/Korea, then Kuala Lumpur</Card.Text>
+              <Card.Text style={{fontSize:"1.2rem"}}>Search for flights that go to (KUL)</Card.Text>
               <Card.Text style={{fontSize:"1.2rem"}}> Vancouver to Singapore, then to Kuala Lumpur  </Card.Text>
               <Button variant='secondary' target="_blank" rel="noopener noreferrer" href='https://www.google.com/travel/flights'>More Info</Button>
             </Card.Body>
@@ -94,8 +94,8 @@ function App() {
     height: '60%'}}  />
             <Card.Body>
               <Card.Title>Travel From Australia</Card.Title>
-              <Card.Text style={{fontSize:"1.2rem"}}>Sydney to Kuala Lumpur, direct</Card.Text>
-              <Card.Text style={{fontSize:"1.2rem"}}>Sydney to Singapore, then Kuala Lumpur </Card.Text>
+              <Card.Text style={{fontSize:"1.2rem"}}>Sydney to Kuala Lumpur (KUL)</Card.Text>
+              <Card.Text style={{fontSize:"1.2rem"}}>Sydney to Singapore, then Kuala Lumpur (KUL) </Card.Text>
               <Button variant='secondary'  target="_blank" rel="noopener noreferrer" href='https://www.google.com/travel/flights'>More Info</Button>
             </Card.Body>
           </Card>
