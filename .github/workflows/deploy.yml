@@ -18,8 +18,10 @@ jobs:
         with:
           node-version: 14
 
-      - name: Update npm
-        run: npm install -g npm@latest
+      - name: Clean and Install Dependencies
+        run: |
+            rm -rf node_modules
+            npm install
 
       - name: Install dependencies
         run: npm ci
