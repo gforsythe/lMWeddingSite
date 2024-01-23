@@ -23,9 +23,6 @@ jobs:
             rm -rf node_modules
             npm install
 
-      - name: Install dependencies
-        run: npm ci
-
       - name: Configure Git
         run: |
           git config --global user.email "you@example.com"
