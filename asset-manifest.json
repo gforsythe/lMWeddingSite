@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/lMWeddingSite/static/css/main.2f73fda9.css",
-    "main.js": "/lMWeddingSite/static/js/main.b0b19d96.js",
+    "main.js": "/lMWeddingSite/static/js/main.11f44efc.js",
     "static/js/787.ba44f1db.chunk.js": "/lMWeddingSite/static/js/787.ba44f1db.chunk.js",
     "static/media/slide01.jpg": "/lMWeddingSite/static/media/slide01.6509354f77ba46e1d030.jpg",
-    "static/media/prepLink01.png": "/lMWeddingSite/static/media/prepLink01.d36309a982e99366c753.png",
     "static/media/fashion06.png": "/lMWeddingSite/static/media/fashion06.e0c86e6d6c9258ed37e6.png",
     "static/media/fashion04.png": "/lMWeddingSite/static/media/fashion04.3f66702f9f3e4a79cd64.png",
     "static/media/fashion08.png": "/lMWeddingSite/static/media/fashion08.dd0acb7a81ff0121dac7.png",
@@ -17,18 +16,18 @@
     "static/media/venueImg.jpeg": "/lMWeddingSite/static/media/venueImg.1230c339578bf30e57e5.jpeg",
     "static/media/fashion07.png": "/lMWeddingSite/static/media/fashion07.6e34a73aac9b5a871f40.png",
     "static/media/slide02.jpg": "/lMWeddingSite/static/media/slide02.6578acfd86de99ec9445.jpg",
+    "static/media/plane.jpeg": "/lMWeddingSite/static/media/plane.52fb716941ffb7fb73d0.jpeg",
     "static/media/slid05.jpg": "/lMWeddingSite/static/media/slid05.c8c70d91a1d32b3bc123.jpg",
-    "static/media/prepLink02.jpeg": "/lMWeddingSite/static/media/prepLink02.b5f10e15883875fc88fe.jpeg",
     "static/media/slideimg04.jpg": "/lMWeddingSite/static/media/slideimg04.4255697f331d14472036.jpg",
     "static/media/LMH1.jpg": "/lMWeddingSite/static/media/LMH1.1b40aeda5fbd8c17e2db.jpg",
     "static/media/shuttleBus.jpeg": "/lMWeddingSite/static/media/shuttleBus.0daebac5d21c6b128b0c.jpeg",
     "index.html": "/lMWeddingSite/index.html",
     "main.2f73fda9.css.map": "/lMWeddingSite/static/css/main.2f73fda9.css.map",
-    "main.b0b19d96.js.map": "/lMWeddingSite/static/js/main.b0b19d96.js.map",
+    "main.11f44efc.js.map": "/lMWeddingSite/static/js/main.11f44efc.js.map",
     "787.ba44f1db.chunk.js.map": "/lMWeddingSite/static/js/787.ba44f1db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f73fda9.css",
-    "static/js/main.b0b19d96.js"
+    "static/js/main.11f44efc.js"
   ]
 }
