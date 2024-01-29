@@ -3,8 +3,6 @@ import venueImg from './imgs/venueImg.jpeg';
 import car from "./imgs/car.jpeg";
 import gift from "./imgs/gift.jpeg";
 import shuttleBus from "./imgs/shuttleBus.jpeg";
-import prepLink01 from './imgs/prepLink01.png'
-import prepLink02 from './imgs/prepLink02.jpeg'
 import planeImg from "./imgs/plane.jpeg"
 import FormForGuests from './components/Form';
 import SectionCard from './components/SectionCard';
@@ -15,6 +13,7 @@ import ImageSlider from './components/ImageSlider';
 import WeddingSection from './components/WeddingSection';
 import MapComponent from './components/MapComponent';
 import WeddingFashion from './components/WeddingFashion';
+import BlogLists from './components/BlogLists';
 
 function App() {
 
@@ -48,7 +47,7 @@ function App() {
           <Col xs={12} md={6} className="mx-auto">
             <Card style={{ background: "#e0e0e0", width: '100%', maxWidth: '900px', padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
               <Card.Img variant='top' src={venueImg} alt="Venue" />
-              <Card.Body>
+              <Card.Body className='text-center'>
                 <Card.Title>Jardin Event Venue</Card.Title>
                 <Card.Text>Sept 15th, 2024 @ lunch time</Card.Text>
                 <Card.Text>Kampung Cheringin, Kampung Janda Baik, 28750 Bentong, Pahang, Malaysia</Card.Text>
@@ -139,20 +138,7 @@ function App() {
           <h1 className="text-center">Preparing for Malaysia </h1>
         </Col>
       </div>
-      <Row>
-        <Col>
-          <SectionCard imageSrc={prepLink01} title={"15 things to know before going to Malaysia"} description={"From what to pack to social etiquette, here is everything you need to know before visiting Malaysia."} link={"https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-malaysia"} />
-
-        </Col>
-        <Col>
-          <SectionCard imageSrc={prepLink02} title={"Gay In: Malaysia - Guide to Gay & Lesbian Malaysia"} description={"A guide to LGBT travel in Malaysia. Is Malaysia a gay friendly travel destination? LGBT Rights in Malaysia. Know the facts before you travel."} link={"https://www.ourtasteforlife.com/lgbt-travel-malaysia/"}/>
-
-        </Col>
-      </Row>
-
-
-
-
+      <BlogLists/>
       <div style={{ paddingTop: "2rem" }} id='faq'>
         <Col>
           <h1 className="text-center">FAQs</h1>

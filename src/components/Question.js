@@ -3,7 +3,7 @@ import { Accordion, Card,} from 'react-bootstrap';
 
 function Question() {
   return (
-    <Card  style={{padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}}>
+    <Card  style={{ padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}}>
       <Card.Header>
         <Accordion>
           <Accordion.Item eventKey="0">
