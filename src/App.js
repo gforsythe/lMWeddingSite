@@ -98,7 +98,7 @@ function App() {
           <SectionCard imageSrc={car} title={"Drive yourself"}btnTxt={"Click Here For Directions"} link={"https://www.google.com/maps/dir//jardin+event+venue/@3.3215613,101.8060964,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31cc3de206e4d77d:0x43cfdc867ba00496!2m2!1d101.8472952!2d3.3214709?entry=ttu"} />
         </Col>
         <Col>
-          <SectionCard imageSrc={shuttleBus} title={"Shuttle Bus"} description={"Closer to Sept 2024, videos and pictures will be posted on specific pick up point and how to get there via parking lot, Grab, or train "} />
+          <SectionCard imageSrc={shuttleBus} title={"Shuttle Bus"} description={"If you'd like to be transported  to venue with other guests, please RSVP at the top of the page indicating you'll need a seat on the bus. Closer to September, videos and pictures will be posted on a specific pick up point and how to get there via parking lot, grab or train"} />
         </Col>
       </Row>
       <div style={{ paddingTop: "2.2rem" }}>
