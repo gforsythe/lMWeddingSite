@@ -5,8 +5,7 @@ import gift from "./imgs/gift.jpeg";
 import shuttleBus from "./imgs/shuttleBus.jpeg";
 import prepLink01 from './imgs/prepLink01.png'
 import prepLink02 from './imgs/prepLink02.jpeg'
-import canFlag from './imgs/flag.png';
-import aussieFlag from "./imgs/aussieFlag.png";
+import planeImg from "./imgs/plane.jpeg"
 import FormForGuests from './components/Form';
 import SectionCard from './components/SectionCard';
 import NavBar from './components/NavBar';
@@ -61,7 +60,7 @@ function App() {
       </div>
       <div style={{ paddingTop: "2rem" }} id='gettingThere'>
         <Col>
-          <h1 className="text-center">Getting There</h1>
+          <h1 className="text-center">Getting To Malaysia</h1>
         </Col>
       </div>
       <Container className="text-center mt-4">
@@ -75,31 +74,18 @@ function App() {
         </p>
       </Container>
 
-      <Row>
-        <Col>
-          <Card style={{ background: "#e0e0e0", height:"100%",   width: '100%', maxWidth: '900px', padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
-            <Card.Img variant='top' src={canFlag} alt="Canada Travel" style={{ objectFit: 'cover',
+      <Row className="justify-content-center">
+        <Col xs={12} md={8} lg={6}>
+          <Card style={{ background: "#e0e0e0", height:"auto",   width: '100%', maxWidth: '900px', padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
+            <Card.Img variant='top' src={planeImg} alt="Canada Travel" style={{ objectFit: 'cover',
     height: '50%'}} />
-            <Card.Body>
-              <Card.Title>Travel From Canada</Card.Title>
-              <Card.Text style={{fontSize:"1.2rem"}}>Search for flights that go to (KUL)</Card.Text>
-              <Card.Text style={{fontSize:"1.2rem"}}> Vancouver to Singapore, then to Kuala Lumpur  </Card.Text>
-              <Button variant='secondary' target="_blank" rel="noopener noreferrer" href='https://www.google.com/travel/flights'>More Info</Button>
+            <Card.Body className="text-center" >
+              <Card.Title>Search for flights that go to (KUL)</Card.Title>
+              <Button variant='secondary' target="_blank" rel="noopener noreferrer" href='https://www.google.com/travel/flights'>Search Flights</Button>
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card style={{ background: "#e0e0e0", height:"100%",  width: '100%', maxWidth: '900px', padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
-            <Card.Img variant='top' src={aussieFlag} alt="Australia Travel" style={{ objectFit: 'cover',
-    height: '60%'}}  />
-            <Card.Body>
-              <Card.Title>Travel From Australia</Card.Title>
-              <Card.Text style={{fontSize:"1.2rem"}}>Sydney to Kuala Lumpur (KUL)</Card.Text>
-              <Card.Text style={{fontSize:"1.2rem"}}>Sydney to Singapore, then Kuala Lumpur (KUL) </Card.Text>
-              <Button variant='secondary'  target="_blank" rel="noopener noreferrer" href='https://www.google.com/travel/flights'>More Info</Button>
-            </Card.Body>
-          </Card>
-        </Col>
+    
       </Row>
       <div style={{ paddingTop: "2rem", paddingBottom:"1.5rem" }}>
         <Col>
