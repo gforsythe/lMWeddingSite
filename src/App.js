@@ -3,10 +3,7 @@ import venueImg from './imgs/venueImg.jpeg';
 import car from "./imgs/car.jpeg";
 import gift from "./imgs/gift.jpeg";
 import shuttleBus from "./imgs/shuttleBus.jpeg";
-import prepLink01 from './imgs/prepLink01.png'
-import prepLink02 from './imgs/prepLink02.jpeg'
-import canFlag from './imgs/flag.png';
-import aussieFlag from "./imgs/aussieFlag.png";
+import planeImg from "./imgs/plane.jpeg"
 import FormForGuests from './components/Form';
 import SectionCard from './components/SectionCard';
 import NavBar from './components/NavBar';
@@ -16,6 +13,7 @@ import ImageSlider from './components/ImageSlider';
 import WeddingSection from './components/WeddingSection';
 import MapComponent from './components/MapComponent';
 import WeddingFashion from './components/WeddingFashion';
+import BlogLists from './components/BlogLists';
 
 function App() {
 
@@ -49,7 +47,7 @@ function App() {
           <Col xs={12} md={6} className="mx-auto">
             <Card style={{ background: "#e0e0e0", width: '100%', maxWidth: '900px', padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
               <Card.Img variant='top' src={venueImg} alt="Venue" />
-              <Card.Body>
+              <Card.Body className='text-center'>
                 <Card.Title>Jardin Event Venue</Card.Title>
                 <Card.Text>Sept 15th, 2024 @ lunch time</Card.Text>
                 <Card.Text>Kampung Cheringin, Kampung Janda Baik, 28750 Bentong, Pahang, Malaysia</Card.Text>
@@ -61,7 +59,7 @@ function App() {
       </div>
       <div style={{ paddingTop: "2rem" }} id='gettingThere'>
         <Col>
-          <h1 className="text-center">Getting There</h1>
+          <h1 className="text-center">Getting To Malaysia</h1>
         </Col>
       </div>
       <Container className="text-center mt-4">
@@ -75,31 +73,18 @@ function App() {
         </p>
       </Container>
 
-      <Row>
-        <Col>
-          <Card style={{ background: "#e0e0e0", height:"100%",   width: '100%', maxWidth: '900px', padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
-            <Card.Img variant='top' src={canFlag} alt="Canada Travel" style={{ objectFit: 'cover',
+      <Row className="justify-content-center">
+        <Col xs={12} md={8} lg={6}>
+          <Card style={{ background: "#e0e0e0", height:"auto",   width: '100%', maxWidth: '900px', padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
+            <Card.Img variant='top' src={planeImg} alt="Canada Travel" style={{ objectFit: 'cover',
     height: '50%'}} />
-            <Card.Body>
-              <Card.Title>Travel From Canada</Card.Title>
-              <Card.Text style={{fontSize:"1.2rem"}}>Search for flights that go to (KUL)</Card.Text>
-              <Card.Text style={{fontSize:"1.2rem"}}> Vancouver to Singapore, then to Kuala Lumpur  </Card.Text>
-              <Button variant='secondary' target="_blank" rel="noopener noreferrer" href='https://www.google.com/travel/flights'>More Info</Button>
+            <Card.Body className="text-center" >
+              <Card.Title>Search for flights that go to (KUL)</Card.Title>
+              <Button variant='secondary' target="_blank" rel="noopener noreferrer" href='https://www.google.com/travel/flights'>Search Flights</Button>
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card style={{ background: "#e0e0e0", height:"100%",  width: '100%', maxWidth: '900px', padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
-            <Card.Img variant='top' src={aussieFlag} alt="Australia Travel" style={{ objectFit: 'cover',
-    height: '60%'}}  />
-            <Card.Body>
-              <Card.Title>Travel From Australia</Card.Title>
-              <Card.Text style={{fontSize:"1.2rem"}}>Sydney to Kuala Lumpur (KUL)</Card.Text>
-              <Card.Text style={{fontSize:"1.2rem"}}>Sydney to Singapore, then Kuala Lumpur (KUL) </Card.Text>
-              <Button variant='secondary'  target="_blank" rel="noopener noreferrer" href='https://www.google.com/travel/flights'>More Info</Button>
-            </Card.Body>
-          </Card>
-        </Col>
+    
       </Row>
       <div style={{ paddingTop: "2rem", paddingBottom:"1.5rem" }}>
         <Col>
@@ -109,10 +94,10 @@ function App() {
 
       <Row>
         <Col>
-          <SectionCard imageSrc={car} title={"Drive yourself"} />
+          <SectionCard imageSrc={car} title={"Drive yourself"}btnTxt={"Click Here For Directions"} link={"https://www.google.com/maps/dir//jardin+event+venue/@3.3215613,101.8060964,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31cc3de206e4d77d:0x43cfdc867ba00496!2m2!1d101.8472952!2d3.3214709?entry=ttu"} />
         </Col>
         <Col>
-          <SectionCard imageSrc={shuttleBus} title={"Shuttle Bus"} description={"Closer to Sept 2024, videos and pictures will be posted on specific pick up point and how to get there via parking lot, Grab, or train "} />
+          <SectionCard imageSrc={shuttleBus} title={"Shuttle Bus"} description={"If you'd like to be transported  to venue with other guests, please RSVP at the top of the page indicating you'll need a seat on the bus. Closer to September, videos and pictures will be posted on a specific pick up point and how to get there via parking lot, grab or train"} />
         </Col>
       </Row>
       <div style={{ paddingTop: "2.2rem" }}>
@@ -153,20 +138,7 @@ function App() {
           <h1 className="text-center">Preparing for Malaysia </h1>
         </Col>
       </div>
-      <Row>
-        <Col>
-          <SectionCard imageSrc={prepLink01} title={"15 things to know before going to Malaysia"} description={"From what to pack to social etiquette, here is everything you need to know before visiting Malaysia."} link={"https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-malaysia"} />
-
-        </Col>
-        <Col>
-          <SectionCard imageSrc={prepLink02} title={"Gay In: Malaysia - Guide to Gay & Lesbian Malaysia"} description={"A guide to LGBT travel in Malaysia. Is Malaysia a gay friendly travel destination? LGBT Rights in Malaysia. Know the facts before you travel."} link={"https://www.ourtasteforlife.com/lgbt-travel-malaysia/"}/>
-
-        </Col>
-      </Row>
-
-
-
-
+      <BlogLists/>
       <div style={{ paddingTop: "2rem" }} id='faq'>
         <Col>
           <h1 className="text-center">FAQs</h1>
