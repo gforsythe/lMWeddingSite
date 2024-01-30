@@ -6,7 +6,7 @@ function BlogLists() {
   return (
     <Card style={{ backgroundColor: "#e0e0e0", padding: '20px', borderWidth: '.5px', border: "2px solid #828282", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
 
-      <ListGroup style={{fontSize:"1.6rem"}} defaultActiveKey="#link1">
+      <ListGroup style={{fontSize:"1.6rem"}} >
         <ListGroup.Item variant='light' action href="https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-malaysia" target='blank'>
           Everything you need to know before visiting Malaysia
         </ListGroup.Item>
